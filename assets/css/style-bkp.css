@@ -1,0 +1,1695 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --greytxt: #7D7D7D;
+    --orange: #FE4C02;
+    --lightpink: #FF9E6E;
+    --font200: 200px;
+    --font150: 150px;
+    --font120: 120px;
+    --font100: 100px;
+    --font85: 85px;
+    --font80: 80px;
+    --font75: 75px;
+    --font70: 70px;
+    --font60: 60px;
+    --font64: 64px;
+    --font58: 58px;
+    --font54: 54px;
+    --font50: 50px;
+    --font48: 48px;
+    --font45: 45px;
+    --font42: 42px;
+    --font40: 40px;
+    --font38: 38px;
+    --font36: 36px;
+    --font34: 34px;
+    --font32: 32px;
+    --font30: 30px;
+    --font28: 28px;
+    --font26: 26px;
+    --font24: 24px;
+    --font22: 22px;
+    --font20: 20px;
+    --font18: 18px;
+    --font16: 16px;
+    --font15: 15px;
+    --font14: 14px;
+    --font13: 13px;
+    --font12: 12px;
+    --font11: 11px;
+    --font10: 10px;
+    --font8: 8px;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--orange);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black);
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--orange);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/*************** register page css start *****************/
+.inner-wrap {
+    background: linear-gradient(180deg, rgba(255, 97, 32, 0.45) 1.81%, rgba(255, 100, 35, 0.81) 17.89%, #FE4C02 32.04%, #010000 84.98%);
+}
+
+.inner-reg-banner {
+    background-image: url('../images/register-form-bg.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 150px 0;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.register-form {
+    position: relative;
+}
+
+.inner-reg-banner .inner-txt h1 {
+    font-size: var(--font60);
+    text-align: center;
+    color: var(--white);
+    font-family: "Montserrat", sans-serif;
+}
+
+.register-form .nav-tabs {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.register-form .nav-tabs .nav-link {
+    color: var(--white);
+    font-size: var(--font24);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.register-form *{
+    font-family: "Montserrat", sans-serif;
+}
+
+.register-form .nav-tabs .nav-link:hover {
+    border: none;
+    border-color: transparent;
+    margin: 0;
+}
+
+.register-form .nav-tabs .nav-link.active {
+    background-color: transparent;
+    border: none;
+    color: var(--black);
+}
+
+.register-form .nav-tabs span {
+    padding: 0 15px;
+    color: var(--white);
+    font-size: var(--font24);
+}
+
+.download-print{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.form-wrap {
+    padding: 40px 30px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.form-heading {
+    font-size: var(--font36);
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.register-form label {
+    font-size: var(--font18);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.input-wrap {
+    display: flex;
+}
+
+.register-form input {
+    margin-right: 10px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    color: var(--white);
+    background-color: transparent;
+    padding: 10px 15px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: var(--white);
+    font-size: var(--font18);
+}
+
+.register-form input:focus {
+    background-color: transparent;
+    color: var(--white);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: var(--white);
+}
+
+.register-form input::placeholder {
+    color: var(--white);
+    font-size: var(--font18);
+}
+
+.input-wrap input:last-child {
+    margin: 0;
+}
+
+.register-form .commonselect+.select2 .select2-selection {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    padding: 8px 15px;
+    height: auto;
+}
+
+.register-form .commonselect+.select2 .select2-selection__rendered {
+    color: #7D7D7D;
+    padding: 0;
+    font-size: var(--font18);
+}
+
+.register-form .commonselect+.select2 .select2-selection__arrow {
+    top: 9px;
+    right: 7px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.input-wrap .commonselect+.select2 {
+    width: 100% !important;
+    margin-right: 15px;
+}
+
+/* radio btn  */
+.radio-btn {
+    width: 25%;
+    display: flex;
+    align-items: center;
+
+}
+
+.radio-btn .each-radio-btn {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+.radio-btn label {
+    font-size: var(--font14);
+    color: var(--white);
+}
+
+.each-radio-btn label span {
+    position: absolute;
+    left: 60px;
+    top: -10px;
+    width: 700px;
+}
+
+.radio-btn .secnd-radio {
+    margin-left: 15px;
+}
+
+.radio-btn-heading {
+    margin-top: 35px;
+}
+
+[type="radio"]:checked,
+[type="checkbox"]:checked,
+[type="radio"]:not(:checked),
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="checkbox"]:checked+label,
+[type="radio"]:not(:checked)+label,
+[type="checkbox"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: var(--white);
+}
+
+[type="radio"]:checked+label:before,
+[type="checkbox"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before,
+[type="checkbox"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: transparent;
+}
+
+[type="radio"]:checked+label:after,
+[type="checkbox"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after,
+[type="checkbox"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--white);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after,
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after,
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* radio btn */
+
+.file-inp {
+    margin-top: 15px;
+}
+
+.file-inp input[type=file] {
+    display: none;
+}
+
+.file-inp #file-input-label {
+    background-color: var(--white);
+    color: #7D7D7D;
+    font-size: var(--font18);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.referee {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* payment method */
+.c-form__fieldset {
+    border: none;
+    padding: 0;
+    /* margin-top: 15px; */
+}
+
+.c-form__fieldset+.c-form__fieldset {
+    margin-top: 2.5em;
+}
+
+.c-form__legend {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.c-form__group {
+    margin-top: 0.5em;
+}
+
+.c-form__group:first-of-type {
+    margin-top: 0;
+}
+
+.c-form__checkbox,
+.c-form__radio {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.c-form__checkbox:checked+.c-form__label .c-form__checkbox-tick,
+.c-form__radio:checked+.c-form__label .c-form__radio-tick {
+    stroke-dashoffset: 0;
+}
+
+/* .c-form__checkbox:focus+.c-form__label .c-form__checkbox-square,
+.c-form__radio:focus+.c-form__label .c-form__radio-circle {
+    stroke: #31CC89;
+} */
+
+.c-form__label {
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    width: fit-content;
+}
+
+.c-form__label-text {
+    margin-left: 0.25em;
+    opacity: 0.75;
+    vertical-align: middle;
+}
+
+.c-form__checkbox-icon,
+.c-form__radio-icon {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+}
+
+.c-form__checkbox-square,
+.c-form__radio-circle {
+    fill: #000;
+    stroke: #000;
+    stroke-width: 1.5;
+    transition: stroke 0.3s ease-in;
+}
+
+.c-form__checkbox-tick,
+.c-form__radio-tick {
+    fill: none;
+    stroke: var(--orange);
+    stroke-dasharray: 11;
+    /* this is the length of the line */
+    stroke-dashoffset: 11;
+    /* this is the length of the line */
+    stroke-width: 1.5;
+    transition: stroke-dashoffset 0.3s ease-in;
+}
+
+.c-form__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-form__label {
+    display: flex !important;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.c-form__fieldset .c-form__group {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 50%;
+    padding-right: 15px;
+}
+
+.c-form__fieldset .c-form__group .c-form__checkbox-square,
+.c-form__radio-circle {
+    fill: var(--white);
+    stroke: var(--white);
+}
+
+svg.c-form__radio-icon {
+    margin-left: auto;
+}
+
+.c-form__label-text {
+    margin-left: 25px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.c-form__label::before,
+.c-form__label::after {
+    content: none !important;
+}
+
+.c-form__label img {
+    width: 34px;
+}
+
+.register-form .form-floating label {
+    background-color: transparent !important;
+    color: var(--white);
+    font-size: var(--font12);
+}
+
+.register-form .form-floating {
+    position: relative;
+}
+
+.register-form .form-floating input {
+    height: 80px;
+}
+
+.register-form .form-floating img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.register-form p {
+    font-size: var(--font18);
+    color: var(--white);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.register-form a {
+    width: fit-content;
+    margin: 25px auto 0;
+    padding: 8px 40px;
+    font-size: var(--font20);
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 25px;
+    display: block;
+    text-decoration: none;
+}
+
+.form-bg-logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+/* membership-plan */
+.membership-plan {
+    background-image: url('../images/inner-page-membershipplan-bg.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner-sect-heading {
+    color: var(--orange);
+    font-size: var(--font48);
+    font-weight: 600;
+}
+
+/* membership-plan ends */
+
+
+.alliance .input-wrap {
+    justify-content: space-between;
+}
+
+.alliance .input-wrap .each-radio-btn {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.order-rec .radio-btn {
+    width: 100%;
+}
+
+.order-rec .radio-btn .each-radio-btn {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.order-rec .radio-btn .each-radio-btn input {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.bank .radio-btn {
+    width: 50%;
+}
+
+.usp-aval ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.usp-aval ul li {
+    display: flex;
+    align-items: flex-end;
+}
+
+.usp-aval ul li span {
+    font-size: var(--font18);
+    font-weight: 600;
+    color: var(--white);
+}
+
+.usp-aval ul li input {
+    border: none;
+    border-bottom: 1px solid var(--white);
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.payment-mode .radio-btn {
+    width: 75%;
+}
+
+.timing-wrap ul {
+    display: flex;
+    list-style: none;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.timing-wrap ul li {
+    margin-right: 10px;
+}
+
+.timing-wrap ul li input {
+    width: 100px;
+    font-size: var(--font18);
+}
+
+.time-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+/*************** register page css ends *****************/
+
+
+/****************** membership page css ******************/
+.black-wrap {
+    background-color: var(--black);
+}
+
+.membershipbanner {
+    position: relative;
+    padding-top: 150px;
+}
+
+.membershipbanner .sect-heading {
+    z-index: 1;
+    right: 500px;
+    left: unset;
+    top: 110px;
+}
+
+.membership {
+    background-image: url('../images/plan-page-banner-bg.png');
+    background-size: contain;
+}
+
+.banner-head-txt {
+    padding-bottom: 150px;
+}
+
+.banner-head-txt h1 {
+    font-size: var(--font48);
+    color: var(--white);
+    width: 40%;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.banner-head-txt h2 {
+    font-size: var(--font64);
+    color: var(--orange);
+    font-weight: 800;
+}
+
+.banner-head-txt h2 span {
+    font-size: var(--font48);
+    color: var(--white);
+}
+
+.banner-txt-box {
+    padding: 0 20px;
+}
+
+.banner-txt-box h4 {
+    font-size: var(--font24);
+    color: var(--white);
+    text-align: center;
+}
+
+.banner-txt-box p {
+    font-size: var(--font20);
+    color: var(--white);
+    margin-top: 60px;
+    text-align: center;
+}
+
+.perk-part {
+    padding: 80px 30px 50px;
+}
+
+.perk-part h3 {
+    font-size: var(--font24);
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    color: var(--white);
+}
+
+.perk-part ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.perk-part ul li {
+    flex: 0 0 23%;
+    text-align: center;
+    background-color: var(--orange);
+    padding: 25px 15px;
+    margin: 10px 10px;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+}
+
+.perk-part ul li:hover {
+    opacity: 1;
+}
+
+.perk-part ul li p {
+    color: var(--white);
+    font-size: var(--font16);
+}
+
+.membership-plan-sec {
+    background-image: url('../images/membershipplan-sec-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 90px 0;
+}
+
+.membership-plan-sec h4 {
+    font-size: var(--font60);
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+}
+
+.plan.membershipplan {
+    background-image: url('../images/pakistan-bg.png'), url(../images/plan-sec-bg.png);
+    background-position: 0px 0px, 0 840px;
+    background-size: 100% 50%, 100% 80%;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 190px;
+}
+
+.membershipplan .plan-swiper {
+    padding-top: 100px;
+}
+
+.getintouch {
+    background: linear-gradient(180deg, #000 -24.34%, #FF4B00 99.95%);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 150px;
+    padding: 50px 30px 30px;
+    position: relative;
+}
+
+.getintouch h5 {
+    font-size: var(--font40);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.getintouch p {
+    font-size: var(--font20);
+    color: var(--white);
+    font-weight: 400;
+}
+
+.getintouch form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 0 0;
+}
+
+.getintouch form input,
+.getintouch form textarea {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 12px 10px 12px 30px;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.getintouch form input::placeholder,
+.getintouch form textarea::placeholder {
+    color: #BAB3B3;
+    font-size: var(--font15);
+    text-transform: capitalize;
+}
+
+.getintouch form textarea {
+    height: 250px;
+}
+
+.getintouch form a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--orange);
+    font-size: var(--font24);
+    border-radius: 50px;
+}
+
+.getintouch img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+}
+
+.contact-us {
+    background-image: url('../images/contact-us-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+    height: 50%;
+    border-radius: 12px;
+    padding: 60px;
+}
+
+.contact-us h6 {
+    color: var(--white);
+    font-size: var(--font30);
+    font-weight: 600;
+}
+
+.contact-us ul {
+    margin: 0;
+    padding: 20px 0 15px;
+    list-style: none;
+}
+
+.contact-us ul li {
+    font-size: var(--font16);
+    color: var(--white);
+    padding-bottom: 15px;
+}
+
+/****************** membership page css ends ******************/
+
+
+/* contact us page */
+.pinkwrap {
+    background-color: #FFDACB;
+}
+
+.contactus-getin .sect-heading {
+    z-index: 1;
+}
+
+.contactus-getin .sect-heading {
+    z-index: 1;
+    top: 130px;
+}
+
+.contactus-getin .getintouch {
+    margin-top: 400px;
+    background: var(--black);
+}
+
+.contactfaq {
+    background: transparent;
+}
+
+.contactfaq .faq-inner {
+    background-image: none;
+    position: relative;
+}
+
+.contactfaq .sect-heading {
+    z-index: 1;
+}
+
+.contactfaq .all-faqs-wrap {
+    z-index: 2;
+}
+
+/* contact us page ends*/
+
+
+/* about page css start*/
+.about-banner {
+    padding-top: 70px;
+    background-color: rgba(255, 218, 203, 0.5);
+}
+
+.about-inner-banner .sect-heading {
+    z-index: 1;
+    top: 130px;
+}
+
+.about-inner-banner {
+    padding-top: 250px;
+}
+
+.about-ban-txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-ban-txt h1 {
+    font-size: var(--font48);
+    width: 50%;
+    font-weight: 700;
+}
+
+.about-ban-txt p {
+    font-size: var(--font24);
+    font-weight: 400;
+    width: 80%;
+}
+
+.mission-vision {
+    background-color: rgba(255, 218, 203, 0.5);
+}
+
+.mission-vision .nav-pills {
+    margin-bottom: 50px !important;
+}
+
+.mission-vision .nav-pills .nav-link {
+    font-size: var(--font48);
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s ease;
+    margin-right: 30px;
+}
+
+.mission-vision .nav-pills .nav-link.active,
+.mission-vision .nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: var(--orange);
+}
+
+.mission-vision .nav-pills .nav-link.active::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 60%;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+.mission-vision .tab-content {
+    background-image: url(../images/membershipplan-sec-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.tab-txt {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tab-txt p {
+    font-size: var(--font24);
+    color: var(--white);
+    padding-right: 30px;
+}
+
+.tab-img img {
+    margin-top: -40px;
+}
+
+.fade:not(.show) {
+    display: none;
+}
+
+.about-partner {
+    padding: 150px 0px 70px;
+}
+
+.about-partner ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-partner ul li {
+    flex: 0 0 25%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* about page css ends*/
+
+
+/************** media query  ************/
+
+@media(max-width:1499px) {
+    .inner-reg-banner {
+        margin: 90px 0;
+        min-height: 200px;
+    }
+
+    .inner-reg-banner .inner-txt h1 {
+        font-size: var(--font48);
+    }
+
+    .register-form .nav-tabs .nav-link {
+        font-size: var(--font20);
+    }
+
+    .form-heading {
+        font-size: var(--font30);
+    }
+
+    .register-form label {
+        font-size: var(--font14);
+    }
+
+    .register-form .commonselect+.select2 .select2-selection__rendered {
+        font-size: var(--font14);
+    }
+
+    .register-form input {
+        font-size: var(--font14);
+    }
+
+    .register-form input::placeholder {
+        font-size: var(--font14);
+    }
+
+    .form-heading.mt-5 {
+        margin-top: 2rem !important;
+    }
+
+    .register-form p {
+        font-size: var(--font14);
+    }
+
+    .inner-sect-heading {
+        font-size: var(--font30);
+    }
+
+    /* membership page */
+    .membershipbanner .sect-heading {
+        top: 180px;
+    }
+
+    .banner-head-txt h1 {
+        font-size: var(--font36);
+        width: 30%;
+    }
+
+    .banner-head-txt h2 {
+        font-size: var(--font60);
+    }
+
+    .banner-head-txt h2 span {
+        font-size: var(--font36);
+    }
+
+    .membership-plan-sec {
+        padding: 70px 0;
+    }
+
+    .membership-plan-sec h4 {
+        font-size: var(--font48);
+    }
+
+    .getintouch {
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .getintouch form a {
+        font-size: var(--font20);
+    }
+
+    /* contact page css */
+    .contactus-getin .sect-heading {
+        top: 110px;
+    }
+
+    .contactus-getin .getintouch {
+        margin-top: 250px;
+    }
+
+    .contactus-getin .contact-us {
+        left: -200px;
+    }
+
+    /* about  page css*/
+    .about-inner-banner .sect-heading {
+        top: 100px;
+    }
+
+    .about-ban-txt h1 {
+        font-size: var(--font36);
+        width: 40%;
+    }
+
+    .about-ban-txt p {
+        font-size: var(--font20);
+    }
+
+    .about-inner-banner {
+        padding-top: 180px;
+    }
+
+    .mission-vision .nav-pills .nav-link {
+        font-size: var(--font36);
+    }
+
+    .tab-txt p {
+        font-size: var(--font20);
+    }
+
+    .about-partner {
+        padding: 100px 0px 40px;
+    }
+}
+
+@media(max-width:1299px) {
+    .inner-reg-banner .inner-txt h1 {
+        font-size: var(--font40);
+    }
+
+    .form-heading {
+        font-size: var(--font26);
+        margin-bottom: 0;
+    }
+
+    .form-wrap .row.mt-5 {
+        margin-top: 1.4rem !important;
+    }
+
+    .register-form a {
+        font-size: var(--font16);
+    }
+
+    /* membership page css */
+    .membershipbanner .sect-heading {
+        top: 130px;
+        right: 250px;
+    }
+
+    .banner-head-txt h1 {
+        font-size: var(--font30);
+        width: 35%;
+    }
+
+    .banner-head-txt h2 {
+        font-size: var(--font48);
+    }
+
+    .banner-head-txt h2 span {
+        font-size: var(--font30);
+    }
+
+    .banner-txt-box h4 {
+        font-size: var(--font20);
+    }
+
+    .banner-txt-box p {
+        font-size: var(--font14);
+        margin-top: 30px;
+
+    }
+
+    .membership-plan-sec h4 {
+        font-size: var(--font36);
+    }
+
+    .membership-plan-sec {
+        background-size: 100% 120%;
+    }
+
+    .membership-plan-sec {
+        padding: 50px 0;
+    }
+
+    .plan.membershipplan {
+        padding-top: 70px;
+    }
+
+    .plan-inner .plan-head-txt h4 {
+        font-size: var(--font24);
+    }
+
+    .plan-inner .plan-head-txt p {
+        font-size: var(--font16);
+    }
+
+    .plan-price a {
+        font-size: var(--font16);
+    }
+
+    .plan.membershipplan {
+        background-position: 0px 0px, 0 650px;
+    }
+
+    .getintouch h5 {
+        font-size: var(--font30);
+    }
+
+    .getintouch p {
+        font-size: var(--font16);
+    }
+
+    .contact-us h6 {
+        font-size: var(--font24);
+    }
+
+    .contact-us ul li {
+        font-size: var(--font14);
+    }
+
+    .getintouch form a {
+        font-size: var(--font16);
+    }
+
+}
+
+@media(max-width:1199px) {
+    .form-wrap {
+        padding: 30px;
+    }
+
+    .inner-reg-banner {
+        margin: 60px 0;
+        min-height: 170px;
+    }
+
+    .inner-reg-banner .inner-txt h1 {
+        font-size: var(--font30);
+    }
+
+    .register-form .nav-tabs .nav-link {
+        font-size: var(--font16);
+    }
+
+    .form-heading {
+        font-size: var(--font22);
+        margin-bottom: 10px;
+    }
+
+    .register-form .commonselect+.select2 .select2-selection {
+        padding: 7px 15px;
+    }
+
+    /* membership page css */
+    .banner-head-txt {
+        padding-bottom: 70px;
+    }
+
+    .banner-head-txt h1 {
+        font-size: var(--font24);
+        width: 30%;
+    }
+
+    .banner-head-txt h2 span {
+        font-size: var(--font24);
+    }
+
+    .banner-txt-box h4 {
+        font-size: var(--font18);
+    }
+
+    .banner-txt-box p {
+        margin-top: 20px;
+    }
+
+    .membership-plan-sec h4 {
+        font-size: var(--font24);
+    }
+
+    .plan.membershipplan {
+        padding-top: 50px;
+    }
+
+    .membershipplan .plan-swiper {
+        padding-top: 20px;
+    }
+
+    .plan.membershipplan {
+        background-size: 100% 40%, 100% 80%;
+        background-position: 0px 0px, 0 470px;
+    }
+
+    .contact-us {
+        width: 310px;
+        padding: 50px;
+    }
+
+    /* contact us page css */
+    .contactus-getin .getintouch {
+        margin-top: 160px;
+    }
+
+    /* about  page css*/
+    .about-inner-banner {
+        padding-top: 70px;
+    }
+
+    .mission-vision .nav-pills .nav-link {
+        font-size: var(--font28);
+    }
+
+    .tab-txt p {
+        font-size: var(--font20);
+    }
+
+    .about-partner {
+        padding: 80px 0px 20px;
+    }
+
+    .about-partner ul {
+        width: 90%;
+    }
+}
+
+@media(max-width:991px) {
+    .register-form .commonselect+.select2 {
+        width: 100% !important;
+    }
+
+    .alliance .input-wrap .each-radio-btn {
+        width: 180px;
+    }
+
+    .timing-wrap ul {
+        padding: 0;
+    }
+
+    .file-inp #file-input-label {
+        font-size: var(--font14);
+    }
+
+    .timing-wrap ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .timing-wrap ul li {
+        margin-top: 15px;
+    }
+
+    /* membership page css */
+    .membershipbanner .sect-heading {
+        top: 70px;
+        right: 170px;
+    }
+
+    .banner-head-txt h1 {
+        width: 40%;
+    }
+
+    .membershipbanner {
+        padding-top: 70px;
+    }
+
+    .banner-head-txt h2 {
+        font-size: var(--font40);
+    }
+
+    .banner-head-txt h2 span {
+        font-size: var(--font20);
+    }
+
+    .perk-part ul li {
+        flex: 0 0 30%;
+    }
+
+    .perk-part ul li p {
+        font-size: var(--font14);
+        margin-top: 15px;
+    }
+
+    .plan-inner .plan-head-txt p {
+        font-size: var(--font14);
+    }
+
+    .plan-price h5 span {
+        padding-left: 5px;
+    }
+
+    .getintouch form a {
+        font-size: var(--font14);
+    }
+
+    /* contact page css */
+    .contactus-getin .contact-us {
+        left: -170px;
+    }
+
+    /* about page */
+    .about-inner-banner {
+        padding-top: 60px;
+    }
+
+    .about-inner-banner .sect-heading {
+        top: 90px;
+    }
+
+    .about-inner-banner .sect-heading {
+        top: 90px;
+    }
+
+    .about-ban-txt h1 {
+        font-size: var(--font30);
+        width: 50%;
+    }
+
+    .about-ban-txt p {
+        font-size: var(--font14);
+    }
+
+    .mission-vision .nav-pills .nav-link {
+        font-size: var(--font22);
+    }
+
+    .tab-txt p {
+        font-size: var(--font14);
+    }
+
+    .about-partner ul {
+        width: 100%;
+    }
+
+    .about-partner ul li {
+        flex: 0 0 33%;
+        text-align: center;
+    }
+}
+
+@media(max-width:767px) {
+    .inner-reg-banner {
+        margin: 40px 0;
+        min-height: 90px;
+    }
+
+    .inner-reg-banner .inner-txt h1 {
+        font-size: var(--font26);
+    }
+
+    .form-wrap {
+        padding: 20px 10px;
+    }
+
+    .form-heading {
+        font-size: var(--font20);
+    }
+
+    .input-wrap {
+        flex-direction: column;
+    }
+
+    .input-wrap input {
+        margin-bottom: 10px;
+    }
+
+    .input-wrap .commonselect+.select2 {
+        margin-bottom: 10px;
+    }
+
+    .radio-btn {
+        width: 85%;
+    }
+
+    .each-radio-btn label span {
+        position: absolute;
+        left: -120px;
+        top: 30px;
+        width: 280px;
+    }
+
+    .form-heading.mt-5.spacetop {
+        margin-top: 70px !important;
+    }
+
+    .c-form__fieldset {
+        flex-wrap: wrap;
+    }
+
+    .c-form__fieldset .c-form__group {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .alliance .input-wrap .each-radio-btn {
+        width: 100%;
+    }
+
+    .order-rec .radio-btn {
+        flex-wrap: wrap;
+    }
+
+    .bank .radio-btn {
+        width: 100%;
+    }
+
+    .usp-aval ul {
+        flex-wrap: wrap;
+    }
+
+    .usp-aval ul li {
+        width: 100%;
+    }
+
+    .payment-mode .radio-btn {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .payment-mode .radio-btn .each-radio-btn {
+        width: 100%;
+    }
+
+    /* membership page */
+    .membershipbanner .sect-heading {
+        top: 30px;
+        right: 20px;
+    }
+
+    .banner-head-txt h1 {
+        width: 40%;
+        font-size: var(--font18);
+    }
+
+    .banner-head-txt h2 {
+        font-size: var(--font24);
+    }
+
+    .banner-head-txt h2 span {
+        font-size: var(--font14);
+    }
+
+    .banner-txt-box h4 {
+        font-size: var(--font16);
+    }
+
+    .banner-txt-box {
+        margin-bottom: 50px;
+    }
+
+    .perk-part {
+        padding: 20px 15px 20px;
+    }
+
+    .perk-part ul li {
+        flex: 0 0 45%;
+        margin: 10px 5px;
+        padding: 10px 5px;
+    }
+
+    .membership-plan-sec {
+        padding: 30px 0;
+    }
+
+    .membership-plan-sec h4 {
+        font-size: var(--font20);
+    }
+
+    .plan.membershipplan .plan-inner {
+        padding-top: 0px;
+    }
+
+    .plan.membershipplan {
+        background-size: 100% 30%, 100% 80%;
+        background-position: 0px 0px, 0 355px;
+    }
+
+    .plan-swiper .swiper-wrapper {
+        height: 580px;
+    }
+
+    .getintouch {
+        margin-top: 40px;
+        width: 100%;
+        padding: 50px 0px 0px;
+    }
+
+    .getintouch h5,
+    .getintouch p {
+        padding-left: 15px;
+    }
+
+    .contact-us {
+        width: auto;
+        padding: 50px;
+        position: relative;
+        left: 0;
+    }
+
+    .getintouch form {
+        padding: 30px 10px 0 10px;
+    }
+
+    /* contact page css */
+    .contactus-getin .sect-heading {
+        font-size: var(--font50);
+    }
+
+    .contactus-getin .contact-us {
+        left: 0;
+        margin-top: 20px;
+    }
+
+    .contactus-getin .getintouch {
+        border-radius: 13px;
+    }
+
+    /* about page css */
+    .about-inner-banner {
+        padding-top: 40px;
+    }
+
+    .mission-vision .nav-pills .nav-link {
+        font-size: var(--font20);
+        margin-right: 10px;
+    }
+
+    .mission-vision .nav-pills .nav-link.active::before {
+        bottom: 5px;
+        left: 15px;
+        width: 30%;
+    }
+
+    .tab-txt {
+        padding: 15px 0;
+    }
+
+    .tab-txt p {
+        width: 100%;
+    }
+
+    .tab-img img {
+        margin-top: 0;
+    }
+
+    .about-partner ul li {
+        flex: 0 0 43%;
+    }
+
+    .about-partner {
+        padding: 50px 0px 20px;
+    }
+}
